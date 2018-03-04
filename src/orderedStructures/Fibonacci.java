@@ -20,7 +20,6 @@ public class Fibonacci extends Progression {
 		double n = current + prev;
 		prev = current;	
 		current = n; 
-		
 		return n;
 	}
 
@@ -29,6 +28,12 @@ public class Fibonacci extends Progression {
 		double value = super.firstValue();
 		prev = 0;
 		return value;
+	}
+	
+	public Boolean Equals(Progression o) {
+		if (this.firstValue() == o.getTerm(0) && this.firstValue() == o.getTerm(1))
+			return true;
+		else return false;
 	}
 
 }

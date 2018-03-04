@@ -32,4 +32,9 @@ public class Geometric extends Progression {
 		return value; 
 	}
 
+	public Boolean Equals(Progression o) {
+		if (this.commonFactor == o.getTerm(0))
+			return true;
+		else return false;
+	}
 }
